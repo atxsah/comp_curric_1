@@ -98,7 +98,7 @@
 	<?php
 	$v1 = 3;
 	$v2 = 5;
-	$resultado;
+	$resultado = 0;
 	for($i = 0; $i <= $v2; $i++):
 		$resultado = $resultado + $i;
 	endfor;
@@ -107,6 +107,18 @@
 	
 	<!-- INICIO DO EXERICIO 5-->
 	<h3>Exercício 5:</h3>
+	<?php
+	function multiplica(){
+		$v1 = 3;
+		$v2 = 5;
+		$resultado = 0 ;
+		for($i = 0; $i <= $v2; $i++):
+			$resultado = $resultado + $i;
+		endfor;
+			echo "$resultado";	
+	}
+		echo multiplica();
+	?>
 	<!-- FIM DO EXERCICIO 5  -->
 	
 	<!-- INICIO DO EXERCICIO 6-->
@@ -145,7 +157,29 @@
 	var_dump($trimmed);	
 	?>
 	
-	<p><i>c - Substr():</i></p>
+	<p><i>c - Substr(): Responsável por retornar um pedaço da string, utilizando três parâmetros: a própria string, o índice inicial
+		 e a quantidade de caracteres a ser retornada.<br/>Exemplo:<br/></i></p>
+	<?php
+	$texto = "eheueeheu vamos fazer o teste!";
+	echo "Sem o substr: "."$texto <br/>";
+	echo "Com o substr: ". substr($texto, 0, 12);
+	?>
+	
+	<p><i>d - Strtolower(): Convete toda a string em letra minúsculas.<br/>Exemplo:<br/></i></p>
+	<?php
+	$text = "AUHAHUAUHA TUDO CERTO!";
+	echo "Sem strtolower: " . "$text <br/>";
+	echo "Com strtolower: ". strtolower($text);
+	?>
+	
+	<p><i>e - Strtoupper(): Converte toda a string em letra maiúscula.<br/>Exemplo:</br></i></p>
+	<?php
+	$text2 = "e lah vamos nos hehe";
+	echo "Sem strtoupper: "."$text2 <br/>";
+	echo "Com strtoupper: ".strtoupper($text2); 
+	?>
+	
+	<p><i>f - Ucfirst(): Converte para maiúscula o primeiro caractere de uma string.<br/>Exemplo:<br/></i></p>
 	<!-- FIM DO EXERCICIO 7 -->
 	
 </body>
