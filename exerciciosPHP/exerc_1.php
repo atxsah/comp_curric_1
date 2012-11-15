@@ -180,6 +180,11 @@
 	?>
 	
 	<p><i>f - Ucfirst(): Converte para maiúscula o primeiro caractere de uma string.<br/>Exemplo:<br/></i></p>
+	<?php
+	$text3 = "within Temptation - Sinead (Benno De Goeij Remix) (BacauHouseMafia.Ro)";
+	echo "Sem ucfirst: "."$text3 <br/>";
+	echo "Com ucfirst: ".ucfirst($text3); 
+	?>
 	<!-- FIM DO EXERCICIO 7 -->
 	
 </body>
