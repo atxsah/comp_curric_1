@@ -176,14 +176,21 @@
 	<?php
 	$text2 = "e lah vamos nos hehe";
 	echo "Sem strtoupper: "."$text2 <br/>";
-	echo "Com strtoupper: ".strtoupper($text2); 
+	echo "Com strtoupper: ". strtoupper($text2); 
 	?>
 	
 	<p><i>f - Ucfirst(): Converte para maiúscula o primeiro caractere de uma string.<br/>Exemplo:<br/></i></p>
 	<?php
 	$text3 = "within Temptation - Sinead (Benno De Goeij Remix) (BacauHouseMafia.Ro)";
 	echo "Sem ucfirst: "."$text3 <br/>";
-	echo "Com ucfirst: ".ucfirst($text3); 
+	echo "Com ucfirst: ". ucfirst($text3); 
+	?>
+	
+	<p><i>g - Ucwords()(): Converte para maiúsculas o primeiro caractere de cada palavra.<br/>Exemplo:<br/></i></p>
+	<?php
+	$text4 = "show de bola";
+	echo "Sem ucwords: "."$text4 <br/>";
+	echo "Com ucwords: ". ucwords($text4); 
 	?>
 	<!-- FIM DO EXERCICIO 7 -->
 	
