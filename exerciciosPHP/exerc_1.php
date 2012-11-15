@@ -186,11 +186,32 @@
 	echo "Com ucfirst: ". ucfirst($text3); 
 	?>
 	
-	<p><i>g - Ucwords()(): Converte para maiúsculas o primeiro caractere de cada palavra.<br/>Exemplo:<br/></i></p>
+	<p><i>g - Ucwords(): Converte para maiúsculas o primeiro caractere de cada palavra.<br/>Exemplo:<br/></i></p>
 	<?php
 	$text4 = "show de bola";
 	echo "Sem ucwords: "."$text4 <br/>";
 	echo "Com ucwords: ". ucwords($text4); 
+	?>
+	
+	<p><i>h - Explode(): Divide uma string em string, retornando uma matriz de string, cada uma como substring
+		de string formada pela divisão dela a partir do delimiter.<br/>Exemplo:<br/></i></p>
+	<?php
+	$text5 = "show de bola e mais um teste hehe";
+	$opa = explode(" ", $text5);
+	echo $opa[0];
+	echo $opa[1];
+	echo $opa[2];
+	echo $opa[3];
+	echo $opa[4];
+	echo $opa[5];
+	echo $opa[6];
+	echo $opa[7];
+	?>
+	
+	<p><i>i - Var_dump(): Representação estruturada sobre uma ou mais expressões, incluindo o tipo e o valor.<br/>Exemplo:<br/></i></p>
+	<?php
+	$text6 = "hehueuheuh... casa laranja";
+	var_dump($text6);
 	?>
 	<!-- FIM DO EXERCICIO 7 -->
 	
