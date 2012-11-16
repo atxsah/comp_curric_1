@@ -252,7 +252,16 @@
 	$int = (float) 19;
 	echo sprintf("%4.1f", $int);
 	?>
+	
+	<p><i>Conversão de float para string em formato de R$:</i></p>
+	<?php
+	$int2 = (float) 33.4;
+	echo sprintf("R$ %4.1f", $int2);
+	?>
 	<!-- FIM DO EXERCICIO 8 -->
+	
+	<!-- INICIO DO EXERCICIO 9 -->
+	<!-- FIM DO EXERCICIO 9 -->
 </body>
 </html>
 
