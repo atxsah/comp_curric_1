@@ -210,11 +210,27 @@
 	
 	<p><i>i - Var_dump(): Representação estruturada sobre uma ou mais expressões, incluindo o tipo e o valor.<br/>Exemplo:<br/></i></p>
 	<?php
-	$text6 = "hehueuheuh... casa laranja";
-	var_dump($text6);
+	$number = 10.3;
+	var_dump($number);
 	?>
 	<!-- FIM DO EXERCICIO 7 -->
 	
+	<!-- INICIO DO EXERCICIO 8 -->
+	<h3>Exercício 8:</h3>
+	<p><i>Conversão de string para integer:</i></p>
+	<?php
+	$string = '19';
+	$int = (int)$string;
+	echo $int;
+	?>
+	
+	<p><i>Conversão de integer para string:</i></p>
+	<?php
+	$number2 = 19;
+	$string = (string)$number2;
+	echo $string;
+	?>
+	<!-- FIM DO EXERCICIO 8 -->
 </body>
 </html>
 
