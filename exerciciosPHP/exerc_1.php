@@ -237,6 +237,21 @@
 	$arrayTex  = explode(',', $tex);
 	print_r($arrayTex);	
 	?>
+	
+	<p><i>Conversão de array para string:</i></p>
+	<?php
+	$arrayList2[] = "dançar na chuva";
+	$arrayList2[] = "não pise na grama";
+	$arrayList2[] = "sem sono";
+
+	print_r(implode(':', $arrayList2))
+	?>
+	
+	<p><i>Conversão de integer para float:</i></p>
+	<?php
+	$int = (float) 19;
+	echo sprintf("%4.1f", $int);
+	?>
 	<!-- FIM DO EXERCICIO 8 -->
 </body>
 </html>
