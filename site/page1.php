@@ -33,21 +33,20 @@
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container-fluid">
-					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
 					<a class="brand" href="#">Samara Rovani</a>
 					<div class="nav-collapse collapse">
-						<!-- <p class="navbar-text pull-right">
-							Logged in as <a href="#" class="navbar-link">Username</a>
-						</p> -->
 						<ul class="nav">
 							<li class="active">
-								<a href="#">Home</a>
+								<a href="page1.php">Page 1</a>
 							</li>
 							<li>
-								<a href="#about">About</a>
+								<a href="page2.php">Page 2</a>
 							</li>
 							<li>
-								<a href="#contact">Contact</a>
+								<a href="aboutme.php">About</a>
+							</li>
+							<li>
+								<a href="contact.php">Contact</a>
 							</li>
 						</ul>
 					</div><!--/.nav-collapse -->
@@ -76,11 +75,12 @@
 					<div class="hero-unit">
 						<h1>Page 1</h1>
 						<p>
-							This is a template for a simple marketing or informational website. It includes a large callout called the hero
-							unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-						</p>
-						<p>
-							<a class="btn btn-primary btn-large">Learn more &raquo;</a>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend molestie placerat. Ut placerat turpis 
+							quis sem dictum eu porta purus commodo. Nulla lobortis adipiscing sollicitudin. Aliquam tincidunt, magna vitae 
+							imperdiet condimentum, tortor libero venenatis purus, et faucibus augue orci vitae ipsum. Fusce vel metus vel tellus 
+							rutrum viverra vel porta est. Vestibulum at nunc nisl, ac faucibus sem. Aliquam pharetra feugiat turpis, et convallis 
+							lorem rutrum at. Aenean interdum laoreet condimentum. Etiam et enim non erat semper scelerisque. Mauris eu eros massa.
+							Proin neque quam, dapibus quis tincidunt id, dapibus sed leo.
 						</p>
 					</div>
 					<div class="row-fluid">
