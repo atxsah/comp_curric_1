@@ -261,6 +261,18 @@
 	<!-- FIM DO EXERCICIO 8 -->
 	
 	<!-- INICIO DO EXERCICIO 9 -->
+	<h3>Exercício 9:</h3>
+	
+	<form method="post" action="handler.php">
+	<input type="checkbox" name="texte">
+	<input type="submit">
+	
+	<?php
+
+	echo $_POST["texte"];
+
+	?>
+	</form>
 	<!-- FIM DO EXERCICIO 9 -->
 </body>
 </html>
