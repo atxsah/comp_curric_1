@@ -224,11 +224,18 @@
 	echo $int;
 	?>
 	
-	<p><i>Conversão de integer para string:</i></p>
+	<p><i>Conversão de string para array:</i></p>
 	<?php
 	$number2 = 19;
 	$string = (string)$number2;
 	echo $string;
+	?>
+	
+	<p><i>Conversão de integer para string:</i></p>
+	<?php
+	$tex = "saah, cris, rovani";
+	$arrayTex  = explode(',', $tex);
+	print_r($arrayTex);	
 	?>
 	<!-- FIM DO EXERCICIO 8 -->
 </body>
