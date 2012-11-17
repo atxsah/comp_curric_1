@@ -36,7 +36,7 @@
 					<a class="brand" href="#">Samara Rovani</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav">
-							<li class="active">
+							<li>
 								<a href="page1.php">Page 1</a>
 							</li>
 							<li>
@@ -45,7 +45,7 @@
 							<li>
 								<a href="aboutme.php">About</a>
 							</li>
-							<li>
+							<li class="active">
 								<a href="contact.php">Contact</a>
 							</li>
 						</ul>
@@ -76,12 +76,15 @@
 					<form action="formulario.php" method="POST">
 						
 						<fieldset>
-							<legend>Formulario de Contato</legend>	
+							<legend>Formulario de Contato</legend>
+							
+							<input type="hidden" name="pagina" value="contato" />	
+							
 							<label for="idNome">Nome: </label><br/>
 							<input type="text" name="nome" id="idNome"/>
 							
 							<label for="idEmail">Email:</label><br/>
-							<input type="emaill" name="email" id="idEmail"/>
+							<input type="email" name="email" id="idEmail"/>
 							
 							<label for="idMensagem">Mensgaem:</label><br/>
 							<textarea name="mensagem" id="idMensagem"rows="3"></textarea>		
@@ -92,81 +95,6 @@
 						</fieldset>
 						
 					</form>
-					<div class="hero-unit">
-						<h1>Page 1</h1>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend molestie placerat. Ut placerat turpis 
-							quis sem dictum eu porta purus commodo. Nulla lobortis adipiscing sollicitudin. Aliquam tincidunt, magna vitae 
-							imperdiet condimentum, tortor libero venenatis purus, et faucibus augue orci vitae ipsum. Fusce vel metus vel tellus 
-							rutrum viverra vel porta est. Vestibulum at nunc nisl, ac faucibus sem. Aliquam pharetra feugiat turpis, et convallis 
-							lorem rutrum at. Aenean interdum laoreet condimentum. Etiam et enim non erat semper scelerisque. Mauris eu eros massa.
-							Proin neque quam, dapibus quis tincidunt id, dapibus sed leo.
-						</p>
-					</div>
-					<div class="row-fluid">
-						<div class="span4">
-							<h2>Heading</h2>
-							<p>
-								Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris 
-								condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. 
-								Donec sed odio dui.
-							</p>
-							<p>
-								<a class="btn" href="#">View details &raquo;</a>
-							</p>
-						</div><!--/span-->
-						<div class="span4">
-							<h2>Heading</h2>
-							<p>
-								Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris 
-								condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. 
-								Donec sed odio dui.
-							</p>
-							<p>
-								<a class="btn" href="#">View details &raquo;</a>
-							</p>
-						</div><!--/span-->
-						<div class="span4">
-							<h2>Heading</h2>
-							<p>
-								Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris 
-								condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
-								Donec sed odio dui.
-							</p>
-							<p>
-								<a class="btn" href="#">View details &raquo;</a>
-							</p>
-						</div><!--/span-->
-					</div><!--/row-->
-					<div class="row-fluid">
-						<div class="span4">
-							<h2>Heading</h2>
-							<p>
-								Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-							</p>
-							<p>
-								<a class="btn" href="#">View details &raquo;</a>
-							</p>
-						</div><!--/span-->
-						<div class="span4">
-							<h2>Heading</h2>
-							<p>
-								Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-							</p>
-							<p>
-								<a class="btn" href="#">View details &raquo;</a>
-							</p>
-						</div><!--/span-->
-						<div class="span4">
-							<h2>Heading</h2>
-							<p>
-								Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-							</p>
-							<p>
-								<a class="btn" href="#">View details &raquo;</a>
-							</p>
-						</div><!--/span-->
-					</div><!--/row-->
 				</div><!--/span-->
 			</div><!--/row-->
 
