@@ -227,9 +227,100 @@ $subtitle = "este é um site em PHP";
 	$arrayString = implode(", ", $musica);
 
 	print $arrayString;
+	?>
+	
+	<p><i>k - Htmlspecialchars(): Converte caracteres especiais para a realidade HTML.<br/>Exemplo:<br/></i></p>
+	<?php
+	$new = htmlspecialchars("<a href='test'>Test</a>", ENT_QUOTES);
+	echo $new;
+	?>
+	
+	<p><i>l - Join(): Sinônimo de implode().<br/>Exemplo:<br/></i></p>
+	<?php
+	$hehe = array('oi', 'tudo bem?!', 'lindo', 'dia!');
+	echo join(" ", $hehe);
+	?>
+	
+	<p><i>m - Isset(): Informa se a variável foi iniciada.<br/>Exemplo:<br/></i></p>
+	<?php
+	$var = 'com sono, mto sono';
 
-?>
+	if (isset($var)) {
+		echo "Essa variável existe.";
+	}
+	?>
+	
+	<p><i>n - Strlen(): Retorna o tamanho de uma string.<br/>Exemplo:<br/></i></p>
+	<?php
+	$str = 'auhuhuhea';
+	echo $str . ": " . strlen($str);
+	?>
+	
+	<p><i>o - Is_float(), is_int(), is_array(), is_string(), is_bool(), is_numeric():
+		Informa o tipo da variavel.<br/>Exemplo:<br/></i></p>
+	<?php
+	if (is_float(27.25)) {
+		echo "is float\n";
+	} else {
+		echo "is not float\n";
+	}
+	var_dump(is_float('abc'));
+	var_dump(is_float(23));
+	var_dump(is_float(23.5));
+	var_dump(is_float(1e7));
+	var_dump(is_float(true));
+	?>
+	<br/>
+	<?php
+	if (is_int(27)) {
+		echo "is int\n";
+	} else {
+		echo "is not int\n";
+	}
+	var_dump(is_int('abc'));
+	var_dump(is_int(23));
+	var_dump(is_int(23.5));
+	var_dump(is_int(1e7));
+	var_dump(is_int(true));
+	?>
+	<br/>
+	<?php
+	$yes = array('this', 'is', 'an array');
 
+	echo is_array($yes) ? 'Array' : 'not an Array';
+	echo "\n";
+
+	$no = 'this is a string';
+
+	echo is_array($no) ? 'Array' : 'not an Array';
+	?>
+	<br/>
+	<?php
+	if (is_string("23")) {
+ 		echo "is string\n";
+	} else {
+ 		echo "is not an string\n";
+	}
+	var_dump(is_string('abc'));
+	var_dump(is_string("23"));
+	var_dump(is_string(23.5));
+	var_dump(is_string(true));
+	?>
+	<br/>
+	<?php
+	$a = false;
+	$b = 0;
+
+	if (is_bool($a)) {
+    	echo 'A variável $a é um valor booleano';
+	}
+	if (is_bool($b)) {
+    	echo 'A variável $b é um valor booleano';
+	}
+	?>
+
+
+	
 	<!-- FIM DO EXERCICIO 7 -->
 	
 	<!-- INICIO DO EXERCICIO 8 -->
