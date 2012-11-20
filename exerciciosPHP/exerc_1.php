@@ -386,6 +386,11 @@ $subtitle = "este é um site em PHP";
 	echo rand();
 	?>
 	
+	<p><i>w - Sqrt(): Calcula a raiz quadrada.<br/>Exemplo:<br/></i></p>
+	<?php
+	echo "Raiz quadrada de 9 é: ". sqrt(9);
+	?>
+	
 	<!-- FIM DO EXERCICIO 7 -->
 	
 	<!-- INICIO DO EXERCICIO 8 -->
