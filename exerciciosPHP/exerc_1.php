@@ -318,9 +318,68 @@ $subtitle = "este é um site em PHP";
     	echo 'A variável $b é um valor booleano';
 	}
 	?>
-
-
+	<br/>
+	<?php
+	$var_name1=678;  
+  
+	if (is_numeric($var_name1))  
+	{  
+		echo "$var_name1 is Numeric.<br>" ;  
+	} else {  
+		echo "$var_name1 is not Numeric. <br>" ;  
+	}
+	?>
 	
+	<p><i>p - Getdate(): Retorna a data atual.<br/>Exemplo:<br/></i></p>
+	<?php
+	$today = getdate(); 
+	print_r($today);
+	?>
+	
+	<p><i>q - Empty(): Informa se a variável é vazia.<br/>Exemplo:<br/></i></p>
+	<?php
+	$var = 0;
+
+	if (empty($var)) {
+    	echo "$var variável inexistente";
+	}
+	?>
+	
+	<p><i>r - Strip_tags(): Retira as tags HTML e PHP de uma string.<br/>Exemplo:<br/></i></p>
+	<?php
+	$text = '<p>Test paragraph.</p><!-- Comment --> <a href="#fragment">Other text</a>';
+	echo strip_tags($text);
+	echo "\n";
+
+	echo strip_tags($text, '<p><a>');
+	?>
+	
+	<p><i>s - Max(): Encontra o maior valor. Min(): Encontra o menor valor.<br/>Exemplo:<br/></i></p>
+	<?php
+	echo min(2, 3, 1, 6, 7); 
+	?>
+	<br/>
+	<?php
+	echo max(array(2, 4, 5));
+ 	?>
+	
+	<p><i>t - Abs():  Valor absoluto.<br/>Exemplo:<br/></i></p>
+	<?php
+	echo $abs = abs(-4.2);
+	?>
+	
+	<p><i>u - ceil(), floor(), round(): Arredonda os vaçlores.<br/>Exemplo:<br/></i></p>
+	<?php
+	echo $n = ceil(4.2);
+	?>
+	<br/>
+	<?php
+	echo $n = floor(4.9);
+	?>
+	<br/>
+	<?php
+	echo $n = round(4.2);
+	?>
 	<!-- FIM DO EXERCICIO 7 -->
 	
 	<!-- INICIO DO EXERCICIO 8 -->
