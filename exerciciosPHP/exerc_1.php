@@ -380,6 +380,12 @@ $subtitle = "este é um site em PHP";
 	<?php
 	echo $n = round(4.2);
 	?>
+	
+	<p><i>v - Rand(): Gera um inteiro aleatório.<br/>Exemplo:<br/></i></p>
+	<?php
+	echo rand();
+	?>
+	
 	<!-- FIM DO EXERCICIO 7 -->
 	
 	<!-- INICIO DO EXERCICIO 8 -->
