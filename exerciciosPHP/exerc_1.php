@@ -391,6 +391,30 @@ $subtitle = "este é um site em PHP";
 	echo "Raiz quadrada de 9 é: ". sqrt(9);
 	?>
 	
+	<p><i>x - Str_replace(): Substitui todas as ocorrências da string de procura com a string de substituição.<br/>Exemplo:<br/></i></p>
+	<?php
+	$letters = array('a', 'p');
+	$fruit   = array('apple', 'pear');
+	$text    = 'a p';
+	$output  = str_replace($letters, $fruit, $text);
+	echo $output;
+	?>
+	
+	<p><i>y - Count(): Conta o número de elementos de uma variável, ou propriedades de um objeto.<br/>Exemplo:<br/></i></p>
+	<?php
+	$a[0] = 1;
+	$a[1] = 3;
+	$a[2] = 5;
+	echo $resultado = count($a);
+	?>
+	
+	<p><i>z - Htmlentities(): Converte todos os caracteres aplicáveis em entidades html..<br/>Exemplo:<br/></i></p>
+	<?php
+	$str = "The 'bold' is <b>bold</b>";
+
+	echo htmlentities($str);
+	?>
+	
 	<!-- FIM DO EXERCICIO 7 -->
 	
 	<!-- INICIO DO EXERCICIO 8 -->
