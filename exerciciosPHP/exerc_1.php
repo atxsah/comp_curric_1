@@ -282,19 +282,35 @@ $subtitle = "este é um site em PHP";
 	<form action="formulario.php" method="POST">
 						
 	<fieldset>
-		<legend>Formulario de Contato</legend>
+		<legend>Formulario de Informações</legend>
 							
 		<input type="hidden" name="pagina" value="contato" />	
-					
-		<label for="idNome">Nome: </label><br/>
-		<input type="text" name="nome" id="idNome"/>
-							
-		<label for="idEmail">Email:</label><br/>
-		<input type="email" name="email" id="idEmail"/>
-							
+
+		<label for="idNome">Nome: </label>
+		<input type="text" name="nome" id="idNome">
+		
+		<label for="idSenha">Password:</label>
+		<input type="password" name="senha" id="idSenha" />	
+		
+		<br/><br/>
+		
+		<label for="idCheckbox">Opção: </label><br/><br/>
+		<input type="checkbox" " name="checkbox" id="idCheckbox"/> Opção1<br/>
+		<input type="checkbox" " name="checkbox" id="idCheckbox"/> Opção2<br/>
+		<input type="checkbox" " name="checkbox" id="idCheckbox"/> Opção3<br/>
+		<input type="checkbox" " name="checkbox" id="idCheckbox"/> Opção4
+		
+		<br/>
+		
+		<label for="idRadio">Sexo: </label><br/>
+		<input type="radio" name="sexo" id="idRadio"/>Feminino<br/>
+		<input type="radio" name="sexo" id="idRadio"/>Masculino<br/>
+		
+		<br/>
+		
 		<label for="idMensagem">Mensgaem:</label><br/>
-		<textarea name="mensagem" id="idMensagem"rows="3"></textarea>		
-							
+		<textarea name="mensagem" id="idMensagem"rows="3"></textarea>
+		
 		<br/>
 						
 		<button class="btn btn-primary">Enviar mensagem</button>							
