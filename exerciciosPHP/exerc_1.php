@@ -469,36 +469,46 @@ $subtitle = "este é um site em PHP";
 	<fieldset>
 		<legend>Formulario de Informações</legend>
 							
-		<input type="hidden" name="pagina" value="contato" />	
-
-		<label for="idNome">Nome: </label>
-		<input type="text" name="nome" id="idNome">
-		
-		<label for="idSenha">Password:</label>
-		<input type="password" name="senha" id="idSenha" />	
-		
-		<br/><br/>
-		
-		<label for="idCheckbox">Opção: </label><br/><br/>
-		<input type="checkbox" " name="checkbox" id="idCheckbox"/> Opção1<br/>
-		<input type="checkbox" " name="checkbox" id="idCheckbox"/> Opção2<br/>
-		<input type="checkbox" " name="checkbox" id="idCheckbox"/> Opção3<br/>
-		<input type="checkbox" " name="checkbox" id="idCheckbox"/> Opção4
-		
-		<br/>
-		
-		<label for="idRadio">Sexo: </label><br/>
-		<input type="radio" name="sexo" id="idRadio"/>Feminino<br/>
-		<input type="radio" name="sexo" id="idRadio"/>Masculino<br/>
-		
-		<br/>
-		
-		<label for="idMensagem">Mensgaem:</label><br/>
-		<textarea name="mensagem" id="idMensagem"rows="3"></textarea>
-		
-		<br/>
-						
-		<button class="btn btn-primary">Enviar mensagem</button>							
+		<input type="hidden" name="pagina" value="contato">
+          			
+          			<label for="idNome">Nome: </label>
+          			<input type="text" name="nome" id="idNome" required="true"/> 
+          			
+          			<br/>
+          			
+          			<label for="idEmail">Email: </label>
+          			<input type="email" name="email" id="idEmail" required="true"/> 
+          			
+          			<br/>
+          			
+          			<label for="idSenha">Senha: </label>
+          			<input type="password" name="senha" id="idSenha" required="true"/>
+          			
+          			<br/>
+          			
+      				<label for="idMensagem">Mensagem: </label><br />
+          			<textarea name="mensagem" id="idMensagem" rows="3"></textarea>
+          			
+          			<br/>
+          			
+          			<p>Sexo: </p>
+          			<input type="radio" name="radio" value="Masculino" id ="idRadio" required="true"/>
+          			<label for="idRadio">Masculino </label>
+          			          			
+          			<br/>
+          			
+          			<input type="radio" name="radio" value="Feminino" id="idRadio" required=""/>
+          			<label for="idRadio">Feminino</label>
+          			          			
+          			<br/><br/>
+          			
+          			<input type="checkbox" name="Dica" id="idCheckBox"/>
+          			<label for="idCheckBox">Achou legal? Então marque aqui para divulgar.</label>
+          			
+          			<br/><br/>
+          			
+          			
+          			<button class="btn btn-primary">Enviar Informações</button>							
 	</fieldset>
 						
 	</form>
