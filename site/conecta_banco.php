@@ -13,4 +13,22 @@
 	echo "funcionou?";
 	
 	mysql_close();
+	
+	$host = "localhost";
+	$user = "root";
+	$pass = "";
+	$database= "testePHP";
+	
+	$conn = new mysqli($host, $user, $pass, $database);
+	
+	if($conn->connect_erro){
+		echo "Failed to conect to MySql: (" . $conn->connect_erro . ")" . $conn->connect_error;
+	}
+	
+	$sql = "SELECT *FROM contat";
+	
+	$result = $conn->query($sql);
+	
+	mysql_close();
+	echo "o contato de $nome foi inserido no BD com sucesso!!";
 ?>
