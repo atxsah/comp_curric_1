@@ -11,4 +11,5 @@ if (isset($_POST["pagina"]) && $_POST["pagina"] == "contato") {
 	//SENÃO redirecionar para a página de contato
 	header("Location: contact.php");
 }
+
 ?>
