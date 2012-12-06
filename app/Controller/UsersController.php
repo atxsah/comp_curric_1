@@ -8,9 +8,11 @@ class UsersController extends AppController
     $this->Auth->allow('register','logout','change_password','remember_password','remember_password_step_2');
   }
 
+  // actions
   public function home()
   {
-    $this->User->recursive = 0;
+    $this->User->recursive = 0;    
+
     $this->set('users', $this->paginate());
   }
 
