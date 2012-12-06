@@ -28,23 +28,28 @@
 			<td><?php echo $post["Post"]["modified"]; ?></td>
 			<td>
 				<?php 
-					echo $this->Html->link("Visualizar", array('controller' => 'posts','action' => 'view', $post["Post"]["id"]));
+					echo $this->Html->link("Visualizar", array('controller' => 'posts','action' => 'view', $post["Post"]["id"]), 
+					array('class'=>'btn btn-small'));
 					//fazer pro edit e excluir
 				?>	
 			</td>
 			<td>
 				<?php 
-					echo $this->Html->link("Editar", array('controller' => 'posts','action' => 'edit', $post["Post"]["id"]));
+					echo $this->Html->link("Editar", array('controller' => 'posts','action' => 'edit', $post["Post"]["id"]),
+					array('class'=>'btn btn-info btn-small'));
 					//fazer pro edit e excluir
 				?>
 			</td>
 			<td>
 				<?php 
-					echo $this->Html->link("Excluir", array('controller' => 'posts','action' => 'view', $post["Post"]["id"]));
+					echo $this->Form->postLink("Excluir", array('controller' => 'posts','action' => 'delete', $post["Post"]["id"]),
+					array('class'=>'btn btn-danger btn-small'));
 					//fazer pro edit e excluir
 				?>
 			</td>
 		</tr>
+		
+		<tr
 		<?php endforeach; ?>
 	</tbody>
 </table>

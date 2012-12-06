@@ -52,8 +52,9 @@
                       <li class="<?php echo $this->action == 'register' ? 'active' : ''; ?>">
                         <?php echo $this->Html->link(__('Register'),array('controller' => 'users','action' => 'register')) ?>
                       </li>
-
-
+                       <li class="<?php echo $this->action == 'View' ? 'active' : ''; ?>">
+                        <?php echo $this->Html->link(__('Postagens'),array('controller' => 'Posts','action' => 'index')) ?>
+                      </li>                      
                     </ul>
 
                     <?php if( AuthComponent::user('id') ) { ?>
