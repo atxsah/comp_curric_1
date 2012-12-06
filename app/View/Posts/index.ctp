@@ -15,7 +15,7 @@
 			<th>Texto</th>
 			<th>Criado em</th>
 			<th>Atualizado em</th>
-			<th colspan="3">Acções</th>
+			<th colspan="3">Ações</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -29,6 +29,18 @@
 			<td>
 				<?php 
 					echo $this->Html->link("Visualizar", array('controller' => 'posts','action' => 'view', $post["Post"]["id"]));
+					//fazer pro edit e excluir
+				?>	
+			</td>
+			<td>
+				<?php 
+					echo $this->Html->link("Editar", array('controller' => 'posts','action' => 'edit', $post["Post"]["id"]));
+					//fazer pro edit e excluir
+				?>
+			</td>
+			<td>
+				<?php 
+					echo $this->Html->link("Excluir", array('controller' => 'posts','action' => 'view', $post["Post"]["id"]));
 					//fazer pro edit e excluir
 				?>
 			</td>
