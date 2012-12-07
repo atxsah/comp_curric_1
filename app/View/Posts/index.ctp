@@ -44,7 +44,6 @@
 				<?php 
 					echo $this->Form->postLink("Excluir", array('controller' => 'posts','action' => 'delete', $post["Post"]["id"]),
 					array('class'=>'btn btn-danger btn-small'));
-					//fazer pro edit e excluir
 				?>
 			</td>
 		</tr>

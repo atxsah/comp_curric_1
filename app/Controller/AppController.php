@@ -47,5 +47,3 @@ class AppController extends Controller
 		Configure::write('Config.language', 'por');
 	}	
 }
-
-
