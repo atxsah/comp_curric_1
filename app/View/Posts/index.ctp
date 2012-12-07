@@ -35,13 +35,6 @@
 			</td>
 			<td>
 				<?php 
-					echo $this->Html->link("Editar", array('controller' => 'posts','action' => 'edit', $post["Post"]["id"]),
-					array('class'=>'btn btn-info btn-small'));
-					//fazer pro edit e excluir
-				?>
-			</td>
-			<td>
-				<?php 
 					echo $this->Form->postLink("Excluir", array('controller' => 'posts','action' => 'delete', $post["Post"]["id"]),
 					array('class'=>'btn btn-danger btn-small'));
 				?>
